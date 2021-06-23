@@ -1,0 +1,93 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Playfair Display', serif;
+    background-color: black;
+    font-size: 1.2rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.heading {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.heading span {
+    display: block;
+    margin: 55px 12px 0px 12px;
+    height: 0.1px;
+    width: 45%;
+    border: 2px solid #e4bc84;
+}
+
+h1 {
+    color: #e4bc84;
+    font-size: 2.5rem;
+}
+
+.main {
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+section {
+    position: relative;
+    width: 30%;
+    min-height: 150px;
+    border: 1px solid #e4bc84;
+    padding-left: 12px;
+    padding-bottom: 25px;
+}
+
+h2 {
+    margin: 0px;
+    padding: 3px 15px 3px 15px;
+}
+
+.title {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: 1px solid white;
+    background-color: #e4bc84;
+}
+
+section p {
+    color: #e4bc84;
+    margin: 55px 3px 5px 3px;
+    font-style: oblique;
+    text-align: left;
+}
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (min-width: 768px) and (max-width:991px) {
+    .main {
+        display: block;
+    }
+    section {
+        float: left;
+        width: 47%;
+        margin: 10px;
+    }
+    section:nth-child(3) {
+        width: 96.5%;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .main {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    section {
+        margin: 15px 2px 15px 2px;
+        width: 98%
+    }
+}
